@@ -17,3 +17,23 @@ print (f"User has inputted the message : {msg}")
 # call function to print date and time
 print_current_date_and_time()
 
+# work out the time of the day and establish a greeting accordigly
+
+# Get the current time
+current_time = datetime.now().time()
+
+# Extract the hour from the current time
+current_hour = current_time.hour
+
+# Greet the user based on the current hour
+if 5 <= current_hour < 12:
+    greeting = "Good morning"
+elif 12 <= current_hour < 18:
+    greeting = "Good afternoon"
+else:
+    greeting = "Good evening"
+
+# Print the greeting
+print(f"\n{greeting} User, Program will exit now - Goodbye")
+
+# 
